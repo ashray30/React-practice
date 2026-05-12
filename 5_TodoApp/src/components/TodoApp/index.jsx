@@ -9,7 +9,7 @@ const TodoApp = () => {
         if (item.id === id) {
             return {
                 ...item,
-                isCompleted: !item.isCompleted
+                isCompleted: true
             };
         }
 
