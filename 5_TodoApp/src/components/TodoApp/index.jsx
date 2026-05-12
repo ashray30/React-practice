@@ -4,12 +4,12 @@ const TodoApp = () => {
     const [task, setTask] = useState([{id: uuidv4(), task: "go to gym", isCompleted: false}]);
     const [newTask, setNewTask] = useState("");
 
-    let TaskCompelet = (id) => {
+    let TaskComplete = (id) => {
     const updatedTask = task.map((item) => {
         if (item.id === id) {
             return {
                 ...item,
-                isCompleted: true
+                isCompleted: !item.isCompleted
             };
         }
 
