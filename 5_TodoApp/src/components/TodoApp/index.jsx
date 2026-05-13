@@ -51,7 +51,7 @@ const TodoApp = () => {
                             }}>Delete</button>
                                 &nbsp;
                             {/* <button onClick = {()=>{
-                                const updatedTask = task.map((item) => {
+                                const updatedTask = task.map((item) => { 
                                     if(item.id === t.id){
                                         return {...item, isCompleted: true};
                                     }
@@ -70,7 +70,7 @@ const TodoApp = () => {
                                 setTask(updatedTask);
                             }}>Mark as Incomplete</button> */}
 
-                            <button onClick={() => TaskCompelet(t.id)}>{t.isCompleted ? 'Mark as Incomplete' : 'Mark as Complete'}</button>
+                            <button onClick={() => TaskComplete(t.id)}>{t.isCompleted ? 'Mark as Incomplete' : 'Mark as Complete'}</button>
                         </li>
                     ))}
                 </ul>             
